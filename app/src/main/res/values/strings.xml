@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Android_News_Reader</string>
-
+    <string name="app_present_name">NewsRoom</string>
+    <string name="app_creator">Created by Allan Arnesen</string>
+    <string name="app_creator_contact">allan.arnesen@gmail.com</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
