@@ -34,7 +34,7 @@ public class Tables {
             + SOURCES_TABLE
             + " (" + SOURCES_COL_ID + " integer primary key autoincrement, "
             + SOURCES_COL_URL + " text, "
-            + SOURCES_COL_NAME + " text, "
+            + SOURCES_COL_NAME + " text"
             + ");";
 
     /**

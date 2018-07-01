@@ -48,7 +48,7 @@ public class DataSource {
      * Used to get access to the db -> Returns this instance
      *
      */
-    public static synchronized DataSource getInstance() {
+    private static synchronized DataSource getInstance() {
         Log.d(TAG, "getInstance");
         return instance;
     }
@@ -63,7 +63,7 @@ public class DataSource {
     /**
      * Sources_Table members
      */
-    public String[] Sources_Table = {
+    private String[] Sources_Table = {
             Tables.SOURCES_COL_ID,
             Tables.SOURCES_COL_NAME,
             Tables.SOURCES_COL_URL
@@ -72,7 +72,7 @@ public class DataSource {
     /**
      * Empty constructor -> initializer
      */
-    public DataSource() {
+    private DataSource() {
         Log.d(TAG, "DataSource");
     }
 
@@ -144,7 +144,7 @@ public class DataSource {
      * Create project objects from every row returned
      * and return the object for the ArrayList
      */
-    public NewsSource cursorToSource(Cursor cursor) {
+    private NewsSource cursorToSource(Cursor cursor) {
         Log.d(TAG, "cursorToSource");
         DataSource.checkStatus();
 
